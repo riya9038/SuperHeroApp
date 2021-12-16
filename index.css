@@ -1,0 +1,186 @@
+body{
+    /* background-color: red;; */
+    background-image: url("https://wallpaperaccess.com/full/19681.jpg");
+    background-color:rgba(255,255,255,0.5);;
+    background-size: cover;
+    background-position: center;
+    
+}
+header{
+    width:100%;
+    height: 10vh;
+    background-color: darkred;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+.heading{
+    width: 10%;
+    height: 100%;
+    color:white;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+.page{
+    width:80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 30px;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.home{
+
+    border-right: 1px solid black;
+}
+#home-button{
+    width: 100%;
+    height: 100%;
+    background-color: darkred;
+    outline: none;
+    border: none;
+    
+}
+#button{
+    width: 100%;
+    height: 100%;
+}
+#button a{
+    text-decoration: none;
+    color: black;
+}
+#home-button a{
+    text-decoration: none;
+    color: black;
+}
+#container{
+    width:100%;
+    height: 100vh;
+    backdrop-filter: blur(3px);
+    background-color: rgba(0,0,0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+#search{
+    width:80%;
+    height: 100px;
+    background-color: white;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.mask{
+    width: 8%;
+    height:100%;
+    background-color:grey;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border: 1px solid white;
+}
+.mask i{
+    /* width:90%;
+    height: 50%; */
+    font-size:2rem;
+}
+#search input{
+    width: 82%;
+    height:100%;
+    font-size: 1.5rem;
+    background-color: white;
+    opacity: 1;
+}
+#searchBox{
+    width: 10%;
+    height:100%;
+    background-color: red;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+#searchBox span{
+    color:black;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+#list{
+    width:55%; 
+    overflow-y: scroll;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+#hero-list{
+    width: 95%;
+    padding-left: 0px;;
+    
+}
+#hero{
+    /* background-color: rgba(255,255,255,0.5); */
+    height: 200px;
+    /* color: aliceblue; */
+    margin: 10px;
+    list-style: none;
+    width: 100%;
+    border-radius: 6px;
+    
+}
+.hero-link{
+    display: flex;
+    align-items: center;
+    width:98%;
+    height: 100%;
+    border-radius: 6px;
+    background-color: rgb(19, 18, 18);;
+    border: 1px solid white;
+    box-shadow: 0.5px 0.5px 8px 2px grey;
+}
+#details{
+    width: 80%;
+    height: 95%;
+    background-color: rgba(253, 246, 246, 0.5);;
+    text-align: left;
+    padding-left: 10px;
+    font-family: cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 15px;
+    border-radius: 6px;
+    box-shadow: 0.5px 0.5px 8px 2px rgb(87, 61, 61) inset;
+}
+.hero-img{
+    border-radius: 6px;
+    box-shadow: 0.5px 0.5px 8px 2px grey;
+}
+.hero-name{
+    font-size: 1.5rem;
+}
+.like{
+    background-color: rgb(145, 9, 9);
+    color: aliceblue;
+    width:80px;
+    border-radius: 6px;
+    margin: 10px;
+}
