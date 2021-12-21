@@ -109,8 +109,13 @@ function setFav(id,e){
         localStorage.removeItem(e.path[1].id);
         favarr.pop(e.path[1].id);
     }
-    // let like= document.getElementById(`like${hid}`);
-    // like.style.backgroundColor= black;
+    Notification.requestPermission(permission => {
+        if(permission === 'granted') {
+            const myNoti = new Notification('Notification', {
+                body: 'SuperHero Added to Favourites',
+            });
+        }
+    });
 }
 
 //rendering the fav list
@@ -193,6 +198,13 @@ async function getFav(){
 function removeFav(id, event){
     event.stopPropagation();
     localStorage.removeItem(`${id}`);
+    Notification.requestPermission(permission => {
+        if(permission === 'granted') {
+            const myNoti = new Notification('Notification', {
+                body: 'SuperHero removed from Favourites',
+            });
+        }
+    });
     location.reload();
 }
 
